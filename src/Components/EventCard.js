@@ -8,7 +8,7 @@ const EventCard = ({ imageUrl, status, title, text, date, buttonText }) => {
     <Container>
       <Card className="mb-3 shadow" style={{ width: '354px', height: '473px', borderRadius:'12px' }}>
         <Card.Img
-          variant="top"
+          // variant="top"
           src={imageUrl}
           alt={title}
           style={{ height: '140px', borderTopLeftRadius: '12px', borderTopRightRadius: '12px',}}

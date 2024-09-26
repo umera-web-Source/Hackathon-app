@@ -132,7 +132,7 @@
 }
 .card-section {
   /* position: relative; */
-  max-height: fit-content !important;
+  /* max-height: fit-content !important; */
   top: 182px;
   width: 1442px !important;
 }

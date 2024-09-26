@@ -49,7 +49,7 @@ const CardsFilter = () => {
     const filteredList = events.filter((event) => {
       const matchesStatus = activeStatusFilters.length ? activeStatusFilters.includes(event.status) : true;
       const matchesLevel = activeLevelFilters.length ? activeLevelFilters.includes(event.level) : true;
-      const matchesSearch = event.title.toLowerCase().includes(searchValue.toLowerCase()) || event.text.toLowerCase().includes(searchValue.toLowerCase());
+      const matchesSearch = event?.status?.toLowerCase().includes(searchValue.toLowerCase())
       return matchesStatus && matchesLevel && matchesSearch;
     });
 
